@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0px;
+			padding:0px;
+		}
+		.father{
+			background-color: #ff0;
+		}
+		.bigbox{
+			height:300px;
+			width: 300px;
+			float:left;
+		}
+		.sonbox1{
+			background-color: #00f;
+		}
+		.sonbox2{
+			background-color: #f00;
+		}
+		.sonbox3{
+			background-color: #0f0;
+		}
+		.clearFix:before,.clearFix:after{
+			content:"";
+			clear:both;
+			display:block;
+		}
+	</style>
+</head>
+<body>
+	<div class="father clearFix">
+		<div class="bigbox sonbox1"></div>
+		<div class="bigbox sonbox2"></div>
+		<div class="bigbox sonbox3"></div>
+	</div>
+</body>
+</html>

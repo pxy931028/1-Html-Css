@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		.keepbj{                    		/*//通过class来设置*/
+				background-color: #ff0;
+			}
+			.clear{
+				clear:both;
+			}
+			.div1{
+				float:left;
+				width:40px;
+				height:40px;
+				background-color: #f00;
+			}
+			
+			.div2{
+				float:left;
+				width:30px;
+				height:50px;
+				background-color: #0ff;
+			}
+			
+			.div3{
+				/*clear:both; */          /*//div3就不受float的影响。*/
+				width:90px;
+				height:90px;
+				background-color: #00f;
+			}
+	</style>
+</head>
+<body>
+	<div class="keepbj">
+		<div class="div1"></div>
+		<div class="div2"></div>
+		<div class="clear"></div>
+	</div>
+	<div class="div3"></div>
+</body>
+</html>

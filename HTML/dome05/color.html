@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style>
+		*{
+			margin:0px;
+			padding:0px;
+		}
+		.big .small{
+			margin-top:30px;
+			width: 150px;
+			height: 150px;
+			margin-left:100px;
+			float:left;
+		}
+		.box1{
+			border:3px solid;
+			background-color: #aaa;
+			border-color:#f00;						/*四边框*/
+		}
+		.box2{
+			border:3px solid;
+			background-color: #aaa;
+			border-color:#f00 #00f;					/*上下，左右*/
+		}
+		.box3{
+			border:3px solid;
+			background-color: #aaa;
+			border-color:#f00 #0f0 #00f;			/*上，左右，下*/
+		}
+		.box4{
+			border-width:3px;
+			border-style:dotted solid double dashed;   /* 点状，实线，双线，虚线*/
+			border-color:#f00 #0f0 #00f #15f4d1;		/*上，右，下，左*/
+		}
+
+	</style>
+</head>
+<body>
+	<div class="big">
+		<div class="small box1"></div>
+		<div class="small box2"></div>
+		<div class="small box3"></div>
+		<div class="small box4"></div>
+	</div>
+	
+</body>
+</html>
